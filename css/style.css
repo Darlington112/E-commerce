@@ -6,6 +6,15 @@
     margin: 0;
     font-family: 'League Spartan', sans-serif;
 }
+:root{
+    --primary-color: #bfbfbf;
+    --secondary-color: #fff;
+
+}
+.dark-theme{
+    --primary-color: #bfbfbf ;
+    --secondary-color: #212121;
+}
 .section-p1{
     padding: 50px 0px;
 }
@@ -38,11 +47,11 @@ h1{
 
 body{
     width: 100%;
-    background-color: #fff;
+    background-color:var(--secondary-color);
 }
 /* home section */
 #header{
-    background: #C6BED4;
+    background: var(--primary-color);
     position: sticky;
     top: 0;
     display: flex;
@@ -74,8 +83,13 @@ body{
     color: #53D45F;
     opacity: 1;
 }
+#icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
 #showcase{
-    background-color: #C6BED4;
+    background-color: var(--primary-color);
     background-image: url('../images/showcase/pexels-jess-bailey-designs-788946.jpg');
     background-position: right 10% top 50%;
     background-repeat: no-repeat;
@@ -116,14 +130,14 @@ body{
     text-decoration: none;
     font-size: x-large;
     font-weight: 500;
-    color: #ffff;
+    color: var(--secondary-color);
     width: fit-content;
     height: fit-content;
     cursor: pointer;
     transition: 1s ease-in-out;
 }
 #showcase a:hover{
-    background-color: #fff;
+    background-color:var(--secondary-color);
     color: #222;
     padding: 5px 10px 50px 10px;
     width: 150px;
@@ -194,15 +208,15 @@ body{
 }
 .feature-item:nth-child(4) h1{
     background-color: #1095d3;
-    color: #ffff;
+    color:var(--secondary-color)f;
 }
 .feature-item:nth-child(5) h1{
     background-color: #6f19a196;
-    color: #fff;
+    color:var(--secondary-color);
 }
 .feature-item:nth-child(6) h1{
     background-color: #754043;
-    color: #fff;
+    color:var(--secondary-color);
 }
 
 
@@ -235,7 +249,7 @@ body{
     font-size: 1.5rem;
 }
 .product{
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
     padding: 10px 10px;
     border-radius: 15px;
     max-height: 400px;
@@ -244,7 +258,7 @@ body{
     max-height: 450px;
 }
 .product div{
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
     padding: 20px 10px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -279,7 +293,7 @@ body{
 #service .service{
     text-align: center;
     line-height: 3rem;
-    color: #fff;
+    color:var(--secondary-color);
 }
 .service span{
     color: red;
@@ -289,7 +303,7 @@ body{
 .service a{
     width: 200px ;
     height: 100px;
-    background-color: #fff;
+    background-color:var(--secondary-color);
     color: #333;
     text-decoration: none;
     padding: 10px 15px;
@@ -338,7 +352,7 @@ body{
 .banner2 div a{
     width: 200px ;
     height: 100px;
-    background-color: #fff;
+    background-color:var(--secondary-color);
     color: #009919;
     text-decoration: none;
     padding: 10px 15px;
@@ -356,7 +370,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color:rgba(1, 2, 27, 0.993);
-    color: #ffff;
+    color:var(--secondary-color)f;
     padding: 50px 0px;
     margin-bottom: 30px;
 }
@@ -391,7 +405,7 @@ body{
     width: 70px;
     height: 50%;
     background-color: #009919;
-    color: #fff;
+    color:var(--secondary-color);
     border: none;
 }
 .signup button:hover{
@@ -482,7 +496,7 @@ body{
     text-decoration: none;
     background-color: #009919;
     padding: 10px 15px;
-    color: #fff;
+    color:var(--secondary-color);
     font-weight: 600;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -508,7 +522,7 @@ body{
 }
 .product-group .product-each{
     flex-basis: 100px;
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
     padding: 10px 15px;
     cursor: pointer;
 }
@@ -548,7 +562,7 @@ body{
     width: 100px;
     height: 30px;
     padding: 10px;
-    color: #fff;
+    color:var(--secondary-color);
     border: none;
     border-radius: 2px;
     margin-bottom: 30px;
@@ -633,7 +647,7 @@ body{
 #contact-form{
     width: 90%;
     height: 100vh;
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
     display: flex;
     padding: 0px 50px;
     margin-left: 20px;
@@ -671,7 +685,7 @@ body{
     height: 40px;
     padding: 15px 15px;
     background-color: #009919;
-    color: #fff;
+    color:var(--secondary-color);
     border: none;
     margin-top: 10px;
     margin-bottom: 50px;
@@ -711,7 +725,7 @@ body{
     white-space: nowrap;
 }
 #cart table thead{
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
     border-left: none;
     border-right: none;
 }
@@ -772,7 +786,7 @@ body{
     width: 100px;
     padding: 5px 10px;
     background-color: #009919;
-    color: #fff;
+    color:var(--secondary-color);
     border: none;
     cursor: pointer;
 }
@@ -784,12 +798,12 @@ body{
     width: 100%;
     padding: 10px 20px;
     outline: none;
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
 }
 .add-cart{
     margin-top: 30px;
     width: 50%;
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
     padding: 30px;
 }
 .add-cart table {
@@ -798,7 +812,7 @@ body{
     width: 100%;
 }
 .add-cart table td{
-    border: 1px solid #C6BED4;
+    border: 1px solid var(--primary-color);
     width: 50%;
     font-size: 20px;
     padding: 10px;
@@ -808,7 +822,7 @@ body{
     height: 40px;
     padding: 5px 10px;
     background-color: #009919;
-    color: #fff;
+    color:var(--secondary-color);
     border: none;
     cursor: pointer;
     margin-top: 10px;
@@ -821,7 +835,7 @@ body{
 
 @media (max-width: 768px){
     #header{
-        background: #C6BED4;
+        background: var(--primary-color);
         position: sticky;
         top: 0;
         display: flex;
@@ -1201,6 +1215,11 @@ body{
     width: 100%;
 }
 
+}
+@media(max-width:320px){
+    #navBar li {
+        margin-top: -80px;
+    }
 }
 
 
